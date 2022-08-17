@@ -22,7 +22,7 @@ const Home = () => {
                 <Experience />
             </section>
 
-            <section>
+            <section className="contact__section">
                 <Contact />
             </section>
         </div>

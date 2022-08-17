@@ -1,0 +1,14 @@
+@import '../../../../../../sass/variables.scss';
+
+.contact__container {
+    .title__section {
+        color: #fff;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: center;
+        font-family: $sub-font;
+    }
+}

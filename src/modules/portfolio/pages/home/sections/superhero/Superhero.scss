@@ -1,0 +1,36 @@
+@import '../../../../../../sass/variables.scss';
+
+.superhero__container {
+    .superhero__text {
+        margin-bottom: 2rem;
+
+        h2 {
+            font-family: $sub-font;
+            font-size: 1rem;
+            font-weight: 300;
+            color: $yellow-color;
+        }
+
+        p {
+            font-family: $main-font;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .superhero__presentation {
+            margin: 1.5rem 0;
+            h1,
+            h2 {
+                font-size: 4rem;
+                font-family: $main-font;
+                font-weight: 900;
+                color: $white-color;
+            }
+
+            h1 {
+                margin-bottom: 1rem;
+                color: #fff;
+            }
+        }
+    }
+}

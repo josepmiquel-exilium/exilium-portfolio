@@ -1,0 +1,40 @@
+@import '../../../../../../sass/variables.scss';
+
+.vertical__line {
+    border-left: 1px solid $white-color;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.vl__left {
+    margin-left: 10px;
+}
+
+.vl__right {
+    margin-right: 5px;
+}
+
+.layout__socialmedia {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+
+.layout__contact {
+    bottom: 0px;
+    position: absolute;
+    right: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mail__container {
+        margin-bottom: 100px;
+        transform: rotate(90deg);
+
+        a {
+            font-family: $sub-font;
+            font-weight: 300;
+        }
+    }
+}

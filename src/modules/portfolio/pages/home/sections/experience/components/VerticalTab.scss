@@ -1,0 +1,28 @@
+@import '../../../../../../../sass/variables.scss';
+
+.css-19kzrtu {
+    padding: 0px !important;
+    padding-left: 2rem !important;
+}
+
+.MuiTabs-vertical {
+    .css-10d9dml-MuiTabs-indicator {
+        background-color: $yellow-color;
+        left: 0;
+        right: initial;
+    }
+
+    button {
+        color: $white-color;
+        font-family: $sub-font;
+        font-size: $s-fontsize;
+        font-weight: 300;
+        text-transform: capitalize;
+        align-items: flex-start;
+    }
+
+    button[aria-selected='true'] {
+        color: $yellow-color;
+        background-color: $yellow-transparent-color;
+    }
+}

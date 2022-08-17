@@ -1,0 +1,40 @@
+@import '../../../../../../sass/variables.scss';
+
+.aboutme__container {
+    .aboutme__content {
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+
+        .aboutme__text {
+            width: 60%;
+        }
+
+        .aboutme__photo {
+            width: 40%;
+            .wrapper {
+                background-color: $yellow-color;
+                border-radius: 5%;
+                height: 320px;
+                position: relative;
+
+                &:hover {
+                    background-color: transparent;
+                    img {
+                        filter: grayscale(20%) contrast(1);
+                        mix-blend-mode: normal;
+                    }
+                }
+
+                img {
+                    border-radius: 5%;
+                    filter: grayscale(100%) contrast(1) brightness(120%);
+                    mix-blend-mode: multiply;
+                    width: 100%;
+                    height: 320px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

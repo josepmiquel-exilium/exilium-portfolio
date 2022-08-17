@@ -1,0 +1,17 @@
+@import '../../../../sass/variables.scss';
+
+.socialmedia__container {
+    display: flex;
+    flex-direction: column;
+
+    .socialmedia__icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .vertical__line {
+        border-left: 1px solid $white-color;
+        height: 100px;
+        margin-top: 15px;
+    }
+}

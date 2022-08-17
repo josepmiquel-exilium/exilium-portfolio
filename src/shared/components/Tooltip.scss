@@ -1,0 +1,27 @@
+@import '../../sass/variables.scss';
+
+.tooltip {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 1rem 1rem 0;
+    width: 50px;
+
+    &:hover {
+        h2 {
+            color: $yellow-color;
+        }
+    }
+
+    .tooltip__icon {
+        color: $yellow-color;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+        font-weight: 300;
+        font-family: $sub-font;
+    }
+}

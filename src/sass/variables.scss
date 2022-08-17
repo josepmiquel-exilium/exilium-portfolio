@@ -1,0 +1,20 @@
+$black-color: #191919;
+$yellow-color: #ffcd00;
+$yellow-transparent-color: rgba(255, 205, 0, 0.3);
+$white-color: #cecece;
+$main-padding: 290px;
+
+$main-font: 'Circular', sans-serif;
+$sub-font: 'Helvetica', sans-serif;
+$s-fontsize: 1rem;
+
+:export {
+    main-padding: $main-padding;
+    black-color: $black-color;
+    yellow-color: $yellow-color;
+    yellow-transparent-color: $yellow-transparent-color;
+    white-color: $white-color;
+    main-font: $main-font;
+    sub-font: $sub-font;
+    s-fontsize: $s-fontsize;
+}

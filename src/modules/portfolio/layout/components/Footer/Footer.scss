@@ -1,0 +1,16 @@
+@import '../../../../../sass/variables.scss';
+
+.footer__container {
+    background-color: $black-color;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: sticky;
+    h2 {
+        font-family: $sub-font;
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}

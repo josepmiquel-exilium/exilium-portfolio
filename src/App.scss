@@ -23,6 +23,10 @@
     font-family: $main-font;
     font-size: 2rem;
     margin-bottom: 3rem;
+
+    span {
+        margin-right: 0.5rem;
+    }
 }
 
 .title__line {
@@ -46,6 +50,7 @@
     list-style-type: '>';
     margin-left: 10px !important;
     margin-bottom: 1rem !important;
+    padding-left: 0.5rem;
 
     &::marker {
         color: $yellow-color;

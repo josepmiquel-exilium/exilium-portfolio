@@ -5,6 +5,11 @@
     padding-left: 2rem !important;
 }
 
+.css-lfwcke-MuiTabs-flexContainer,
+.css-1g4ac1o-MuiTabs-root {
+    min-width: 150px !important;
+}
+
 .MuiTabs-vertical {
     .css-10d9dml-MuiTabs-indicator {
         background-color: $yellow-color;
@@ -17,7 +22,8 @@
         font-family: $sub-font;
         font-size: $s-fontsize;
         font-weight: 300;
-        text-transform: capitalize;
+        // text-transform: capitalize;
+        text-transform: lowercase;
         align-items: flex-start;
     }
 

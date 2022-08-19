@@ -1,22 +1,37 @@
+// React utils
+import { useEffect, useState } from 'react';
+
 // Components
 import VerticalTabs from './components/VerticalTab';
+import TitleLine from 'shared/components/TitleLine';
 
-// Data
-import jobs from './data/jobs.json';
+// Services
+import { fetchExperience } from 'api/sanitycms/services/fetchs';
+
+// Utils
+import { orderArrByNum } from 'utils/array';
 
 // Scss
 import './Experience.scss';
 
 const Experience = () => {
+    const [jobs, setJobs] = useState(null);
+
+    useEffect(() => {
+        const loadJobs = () => {
+            fetchExperience().then((response) => {
+                setJobs(orderArrByNum(response));
+            });
+        };
+
+        loadJobs();
+    }, []);
+
     return (
         <div className="experience__container">
-            <h2 className="title__section title__line">
-                <span className="menu__number">01.</span> Where I've worked
-            </h2>
+            <TitleLine number="01" title="Where I've worked" />
 
-            <div className="experience__tabs">
-                <VerticalTabs jobs={jobs.data} />
-            </div>
+            <div className="experience__tabs">{jobs && <VerticalTabs jobs={jobs} />}</div>
         </div>
     );
 };

@@ -1,12 +1,15 @@
+// React utils
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-import './VerticalTab.scss';
+// Components
 import JobExample from './JobExample';
+
+// Scss
+import './VerticalTab.scss';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -19,11 +22,7 @@ function TabPanel(props) {
             aria-labelledby={`vertical-tab-${index}`}
             {...other}
         >
-            {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
-                </Box>
-            )}
+            {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
         </div>
     );
 }
@@ -54,12 +53,11 @@ const VerticalTabs = ({ jobs }) => {
                 value={value}
                 onChange={handleChange}
                 aria-label="verticaltabs"
-                textColor="yellow"
-                centered="false"
+                centered={false}
                 // indicatorColor="#fa1e1e"
             >
                 {jobs.map((e, index) => (
-                    <Tab label={e.title} {...a11yProps(index)} />
+                    <Tab label={e.company} {...a11yProps(index)} key={index} />
                 ))}
             </Tabs>
 

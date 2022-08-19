@@ -1,5 +1,6 @@
 // Components
 import Technologies from './components/Technologies';
+import TitleLine from 'shared/components/TitleLine';
 
 // Images
 import JosepPic from 'assets/images/josepmiquel.png';
@@ -10,11 +11,7 @@ import './Aboutme.scss';
 const Aboutme = () => {
     return (
         <div className="aboutme__container">
-            <div className="aboutme__header">
-                <h2 className="title__section title__line">
-                    <span className="menu__number">00.</span> About Me
-                </h2>
-            </div>
+            <TitleLine number="00" title="About Me" />
             <div className="aboutme__content">
                 <div className="aboutme__text">
                     <p>
@@ -22,16 +19,17 @@ const Aboutme = () => {
                         about computers.
                         <br />
                         <br />
-                        I have worked as adminsys, as a computer technician and I am now in the
-                        world of programming solving problems as a Full Stack Developer. Currently I
-                        live in Brussels and I am working in projects involved in civil rights,
-                        culture and social mobilization for human rights. I am also a provider of
-                        communications through secure and encrypted channels, as well as the
-                        development, mantenaince and implementation of applications in the cloud.
+                        I have worked as a system administrator, as a computer technician, as a
+                        warehouse worker and now I am in the programming world solving problems as a
+                        Full Stack Software Developer with Javascript. I currently live in Brussels
+                        and work on projects related to civil rights, culture and social movement
+                        for human rights. I am also a provider of communications through secure and
+                        encrypted channels, as well as development, maintenance and deployment of
+                        cloud applications.
                         <br />
                         <br />
-                        Always attentive to cybersecurity, privacy and people’s rights on the
-                        internet.
+                        Always attentive to cybersecurity, privacy and people's rights on the
+                        Internet.
                         <br />
                         <br />
                         Here are a few technologies I’ve been working with recently:

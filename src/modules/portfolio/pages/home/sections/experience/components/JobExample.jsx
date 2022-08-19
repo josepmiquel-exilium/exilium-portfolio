@@ -5,7 +5,7 @@ const JobExample = ({ job }) => {
     return (
         <div className="jobexample__container">
             <h2>{job.position}</h2>
-            <h3>{job.time}</h3>
+            <h3>{job.duration}</h3>
             <ul>
                 {job.tasks.map((e, key) => (
                     <li className="custom__list" key={key}>

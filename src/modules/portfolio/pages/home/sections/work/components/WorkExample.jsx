@@ -47,7 +47,7 @@ const WorkExample = ({ work }) => {
                         ))}
                     </div>
                     <div className="workexample__links">
-                        {!work.github && (
+                        {work.github && (
                             <a href={work.github}>
                                 <GitHubIcon />
                             </a>

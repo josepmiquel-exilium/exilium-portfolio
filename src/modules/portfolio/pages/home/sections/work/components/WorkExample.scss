@@ -2,10 +2,58 @@
 
 .workexample__container {
     display: flex;
+    margin-bottom: 5rem;
+
+    // EEEEEVEEEEEEN
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .workexample__col__left {
+            margin-left: -50px;
+        }
+
+        .workexample__col__right {
+            .workexample__header {
+                h2 {
+                    text-align: left;
+                }
+
+                h3 {
+                    text-align: left;
+                }
+            }
+
+            .workexample__description {
+                p {
+                    text-align: left;
+                }
+            }
+
+            .workexample__footer {
+                .workexample__techs {
+                    justify-content: flex-start;
+                    h2 {
+                        margin-left: 0;
+                        margin-right: 1rem;
+                    }
+                }
+
+                .workexample__links {
+                    justify-content: flex-start;
+                    a {
+                        margin-left: 0;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
 
     .workexample__col__left {
         width: 50%;
+
         margin-right: -50px;
+
         .image {
             a {
                 position: relative;
@@ -52,7 +100,6 @@
 
     .workexample__col__right {
         width: 50%;
-        margin-top: 2rem;
         z-index: 10;
         display: flex;
         flex-direction: column;
@@ -64,11 +111,13 @@
                 color: $yellow-color;
                 font-size: 1rem;
                 text-align: right;
+                font-weight: 300;
+                font-family: $sub-font;
+                margin-bottom: 0.25rem;
             }
 
             h3 {
                 color: #fff;
-                text-transform: capitalize;
                 font-size: 1.5rem;
                 text-align: right;
             }
@@ -86,6 +135,7 @@
 
             .workexample__techs {
                 display: flex;
+                justify-content: flex-end;
                 margin-bottom: 1rem;
                 h2 {
                     font-size: 1rem;

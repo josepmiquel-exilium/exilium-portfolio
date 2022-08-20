@@ -49,13 +49,13 @@ const WorkExample = ({ work }) => {
                     <div className="workexample__links">
                         {work.github && (
                             <a href={work.github}>
-                                <GitHubIcon />
+                                <GitHubIcon className="custom__icon" />
                             </a>
                         )}
 
                         {work.url && (
                             <a href={work.url}>
-                                <OpenInNewIcon />
+                                <OpenInNewIcon className="custom__icon" />
                             </a>
                         )}
                     </div>

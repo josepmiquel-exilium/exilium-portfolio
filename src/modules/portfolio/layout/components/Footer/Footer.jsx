@@ -1,5 +1,7 @@
-// Scss
+// Components
 import StickyInfo from './components/StickyInfo';
+
+// Scss
 import './Footer.scss';
 
 const Footer = () => {

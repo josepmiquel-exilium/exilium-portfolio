@@ -12,6 +12,7 @@ import {
     FaSass,
     FaVuejs,
     FaWordpress,
+    FaElementor,
 } from 'react-icons/fa';
 import {
     SiExpress,
@@ -21,6 +22,7 @@ import {
     SiMongodb,
     SiServerless,
     SiCloudflare,
+    SiWoocommerce,
 } from 'react-icons/si';
 import { DiGit } from 'react-icons/di';
 
@@ -41,6 +43,9 @@ const stack = [
     { icon: SiServerless, title: 'Serverless' },
     { icon: FaAws, title: 'AWS' },
     { icon: FaWordpress, title: 'Wordpress' },
+    { icon: FaElementor, title: 'Elementor' },
+    { icon: SiWoocommerce, title: 'WCommerce' },
+
     { icon: SiNginx, title: 'Nginx' },
     { icon: SiCloudflare, title: 'Cloudfare' },
     { icon: DiGit, title: 'Git' },

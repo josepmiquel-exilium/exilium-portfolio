@@ -1,3 +1,6 @@
+// Icons
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+
 // Scss
 import './Contact.scss';
 
@@ -17,6 +20,10 @@ const Contact = () => {
                 <br />
                 Contact me. You'll get an answer when I get back from Tatooine.
             </p>
+
+            <a href="mailto:josepmiquel@exilium.cat">
+                <MailOutlineIcon className="contact__icon" />
+            </a>
         </div>
     );
 };

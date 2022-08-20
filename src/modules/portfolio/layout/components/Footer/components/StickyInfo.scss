@@ -35,6 +35,10 @@
         a {
             font-family: $sub-font;
             font-weight: 300;
+
+            &:hover {
+                color: $yellow-color;
+            }
         }
     }
 }

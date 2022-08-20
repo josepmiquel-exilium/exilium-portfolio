@@ -1,6 +1,10 @@
 @import '../../../../../../sass/variables.scss';
 
 .contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .title__section {
         color: #fff;
         text-align: center;
@@ -10,5 +14,19 @@
     p {
         text-align: center;
         font-family: $sub-font;
+    }
+
+    .contact__icon {
+        margin-top: 1rem;
+        font-size: 5rem;
+        color: $yellow-color;
+        padding: 1rem;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: all 0.5s;
+            border: 5px solid $yellow-color;
+            border-radius: 50%;
+        }
     }
 }

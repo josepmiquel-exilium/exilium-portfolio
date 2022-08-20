@@ -6,11 +6,12 @@
     left: 0px;
     right: 0px;
     position: sticky;
+    padding: 1rem 0;
+    z-index: 999;
     h2 {
         font-family: $sub-font;
         font-weight: 300;
         font-size: 1rem;
         text-align: center;
-        padding: 1rem 0;
     }
 }

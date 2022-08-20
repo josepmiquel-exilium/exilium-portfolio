@@ -2,6 +2,11 @@
 
 .superhero__container {
     .superhero__text {
+        .overline__text {
+            color: $yellow-color;
+            text-decoration: line-through;
+        }
+
         margin-bottom: 2rem;
 
         h2 {
@@ -12,7 +17,7 @@
         }
 
         p {
-            font-family: $main-font;
+            font-family: $sub-font;
             font-size: 1rem;
             font-weight: 300;
         }

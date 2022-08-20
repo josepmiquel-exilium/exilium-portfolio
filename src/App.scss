@@ -10,6 +10,7 @@
     &:hover {
         transition: all 0.3s;
         background-color: $yellow-transparent-color;
+        cursor: pointer;
     }
 }
 
@@ -55,5 +56,13 @@
     &::marker {
         color: $yellow-color;
         font-weight: bold;
+    }
+}
+
+.custom__icon {
+    color: $white-color;
+    &:hover {
+        color: $yellow-color;
+        cursor: pointer;
     }
 }

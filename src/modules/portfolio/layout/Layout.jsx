@@ -9,12 +9,6 @@ const Layout = ({ children }) => {
     return (
         <>
             <div className="layout__container">
-                {/* <div className="line line__top"></div>
-                <div className="line line__bottom"></div>
-                <div className="line line__left"></div>
-                <div className="line line__right"></div> */}
-
-                {/* Header */}
                 <Header />
 
                 {/* Body */}

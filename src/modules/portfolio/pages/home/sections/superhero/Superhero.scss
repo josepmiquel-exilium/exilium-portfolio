@@ -39,3 +39,14 @@
         }
     }
 }
+
+@media (max-width: 575.98px) {
+    .superhero__container {
+        .superhero__presentation {
+            h1,
+            h2 {
+                font-size: 2.5rem !important;
+            }
+        }
+    }
+}

@@ -66,3 +66,32 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 575.98px) {
+    .title__line {
+        &::after {
+            display: none;
+        }
+    }
+
+    .title__section {
+        font-size: 1.5rem;
+
+        span {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .menu__modal {
+        width: 80% !important;
+        height: 100vh;
+    }
+
+    .swal2-container {
+        padding: 0 !important;
+    }
+
+    .swal2-close:focus {
+        box-shadow: none !important;
+    }
+}

@@ -8,9 +8,17 @@ import './SocialMedia.scss';
 const SocialMedia = () => {
     return (
         <div className="socialmedia__container">
-            <GitHubIcon className="socialmedia__icon custom__icon" />
-            <LinkedInIcon className="socialmedia__icon custom__icon" />
-            <MailOutlineIcon className="socialmedia__icon custom__icon" />
+            <a href="https://github.com/josepmiquel-exilium" target={'_blank'}>
+                <GitHubIcon className="socialmedia__icon custom__icon" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/josepmiquel-exilium/" target={'_blank'}>
+                <LinkedInIcon className="socialmedia__icon custom__icon" />
+            </a>
+
+            <a href="mailto:josepmiquel@exilium.cat" target={'_blank'}>
+                <MailOutlineIcon className="socialmedia__icon custom__icon" />
+            </a>
         </div>
     );
 };

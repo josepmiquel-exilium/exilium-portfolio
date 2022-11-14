@@ -38,3 +38,35 @@
         }
     }
 }
+
+@media (max-width: 575.98px) {
+    .aboutme__container {
+        .aboutme__content {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+
+            .aboutme__text {
+                width: 100%;
+            }
+
+            .aboutme__photo {
+                display: none;
+            }
+
+            .aboutme__phone__photo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                background-color: $yellow-color;
+                width: 80%;
+                img {
+                    filter: grayscale(100%) contrast(1) brightness(120%);
+                    mix-blend-mode: multiply;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

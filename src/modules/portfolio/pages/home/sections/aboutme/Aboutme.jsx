@@ -5,10 +5,14 @@ import TitleLine from 'shared/components/TitleLine';
 // Images
 import JosepPic from 'assets/images/josepmiquel.png';
 
+// Hooks
+import useIsPhone from 'modules/portfolio/hooks/useIsPhone';
+
 // Scss
 import './Aboutme.scss';
 
 const Aboutme = () => {
+    const isPhone = useIsPhone();
     return (
         <div className="aboutme__container">
             <TitleLine number="00" title="About Me" />
@@ -39,12 +43,19 @@ const Aboutme = () => {
                         <Technologies />
                     </div>
                 </div>
-                <div className="aboutme__photo">
-                    <div className="wrapper">
+
+                {isPhone ? (
+                    <div className="aboutme__phone__photo">
                         <img src={JosepPic} alt="" />
-                        <div className="border"></div>
                     </div>
-                </div>
+                ) : (
+                    <div className="aboutme__photo">
+                        <div className="wrapper">
+                            <img src={JosepPic} alt="" />
+                            <div className="border"></div>
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     );

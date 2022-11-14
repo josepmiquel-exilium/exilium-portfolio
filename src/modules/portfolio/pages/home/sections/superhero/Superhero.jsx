@@ -1,3 +1,6 @@
+// Data
+import resume from 'assets/docs/resume.pdf';
+
 // Scss
 import './Superhero.scss';
 
@@ -20,7 +23,9 @@ const Superhero = () => {
                 </p>
             </div>
 
-            <button className="first__button">Download my resume!</button>
+            <a href={resume} target={'_blank'}>
+                <button className="first__button">Download my resume!</button>
+            </a>
         </div>
     );
 };

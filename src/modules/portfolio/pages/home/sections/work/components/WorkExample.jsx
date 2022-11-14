@@ -37,7 +37,7 @@ const WorkExample = ({ work }) => {
                 </div>
 
                 <div className="workexample__description">
-                    <p>{work.description.slice(0, 250)}</p>
+                    <p>{work.description}</p>
                 </div>
 
                 <div className="workexample__footer">

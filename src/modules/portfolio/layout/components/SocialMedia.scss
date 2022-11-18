@@ -15,3 +15,11 @@
         margin-top: 15px;
     }
 }
+
+@media (max-width: 575.98px) {
+    .socialmedia__container {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+}

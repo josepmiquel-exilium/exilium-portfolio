@@ -8,6 +8,9 @@ import Box from '@mui/material/Box';
 // Components
 import JobExample from './JobExample';
 
+// Hooks
+import useIsPhone from 'modules/portfolio/hooks/useIsPhone';
+
 // Scss
 import './VerticalTab.scss';
 
@@ -41,32 +44,36 @@ function a11yProps(index) {
 }
 const VerticalTabs = ({ jobs }) => {
     const [value, setValue] = React.useState(0);
+    const isPhone = useIsPhone();
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
     return (
-        <Box sx={{ flexGrow: 1, bgcolor: '#191919', display: 'flex' }}>
-            <Tabs
-                orientation="vertical"
-                value={value}
-                onChange={handleChange}
-                aria-label="verticaltabs"
-                centered={false}
-                // indicatorColor="#fa1e1e"
-            >
-                {jobs.map((e, index) => (
-                    <Tab label={e.company} {...a11yProps(index)} key={index} />
-                ))}
-            </Tabs>
+        <div className="verticaltab__container">
+            <Box sx={{ flexGrow: 1, bgcolor: '#191919', display: 'flex' }}>
+                <Tabs
+                    orientation="vertical"
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="verticaltabs"
+                    centered={false}
+                    // indicatorColor="#fa1e1e"
+                    sx={{ minWidth: isPhone ? '125px' : '150px', position: 'sticky', top: '0px' }}
+                >
+                    {jobs.map((e, index) => (
+                        <Tab label={e.company} {...a11yProps(index)} key={index} />
+                    ))}
+                </Tabs>
 
-            {jobs.map((e, index) => (
-                <TabPanel value={value} index={index} key={index}>
-                    <JobExample job={e} />
-                </TabPanel>
-            ))}
-        </Box>
+                {jobs.map((e, index) => (
+                    <TabPanel value={value} index={index} key={index}>
+                        <JobExample job={e} />
+                    </TabPanel>
+                ))}
+            </Box>
+        </div>
     );
 };
 

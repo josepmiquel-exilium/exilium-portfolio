@@ -91,8 +91,10 @@
                     height: 100%;
                     object-fit: contain;
                     opacity: 0.9;
+                    filter: grayscale(100%) brightness(90%) contrast(1);
+                    -webkit-filter: grayscale(100%) brightness(90%) contrast(1);
+                    -moz-filter: grayscale(100%) brightness(90%) contrast(1);
                     mix-blend-mode: multiply;
-                    filter: grayscale(100%) contrast(1) brightness(90%);
                 }
             }
         }

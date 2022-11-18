@@ -1,5 +1,6 @@
 // Components
 import useIsPhone from 'modules/portfolio/hooks/useIsPhone';
+import SocialMedia from '../SocialMedia';
 import StickyInfo from './components/StickyInfo';
 
 // Scss
@@ -10,7 +11,7 @@ const Footer = () => {
 
     return (
         <div className="footer__container">
-            {!isPhone && <StickyInfo />}
+            {isPhone ? <SocialMedia /> : <StickyInfo />}
             <h2>Build by Josep Miquel</h2>
         </div>
     );

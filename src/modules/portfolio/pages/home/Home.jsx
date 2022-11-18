@@ -1,5 +1,5 @@
 // React utils
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 // Components
@@ -11,7 +11,6 @@ import Work from './sections/work/Work';
 
 // Scss
 import './Home.scss';
-import { useEffect } from 'react';
 
 const Home = () => {
     const aboutContainer = useRef(null);

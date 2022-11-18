@@ -1,45 +1,36 @@
 @import '../../../../../../../sass/variables.scss';
-
-.css-19kzrtu {
-    padding: 0px !important;
-    padding-left: 1rem !important;
-}
-
-.css-lfwcke-MuiTabs-flexContainer,
-.css-1g4ac1o-MuiTabs-root {
-    min-width: 150px !important;
-}
-
-.MuiTabs-vertical {
-    .css-10d9dml-MuiTabs-indicator {
-        background-color: $yellow-color;
-        left: 0;
-        right: initial;
+.verticaltab__container {
+    .css-19kzrtu {
+        padding: 0px !important;
+        padding-left: 1rem !important;
     }
 
-    button {
-        color: $white-color;
-        font-family: $sub-font;
-        font-size: $s-fontsize;
-        font-weight: 300;
-        // text-transform: capitalize;
-        text-transform: lowercase;
-        align-items: flex-start;
-    }
+    .MuiTabs-vertical {
+        .css-10d9dml-MuiTabs-indicator {
+            background-color: $yellow-color !important;
+            left: 0;
+            right: initial;
+        }
 
-    button[aria-selected='true'] {
-        color: $yellow-color;
-        background-color: $yellow-transparent-color;
+        button {
+            color: $white-color;
+            font-family: $sub-font;
+            font-size: $s-fontsize;
+            font-weight: 300;
+            // text-transform: capitalize;
+            text-transform: lowercase;
+            align-items: flex-start;
+        }
+
+        button[aria-selected='true'] {
+            color: $yellow-color;
+            background-color: $yellow-transparent-color;
+        }
     }
 }
 
 @media (max-width: 575.98px) {
     .css-19kzrtu {
         padding-left: 1rem !important;
-    }
-
-    .css-lfwcke-MuiTabs-flexContainer,
-    .css-1g4ac1o-MuiTabs-root {
-        min-width: 100px !important;
     }
 }

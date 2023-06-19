@@ -2,8 +2,6 @@
 
 Welcome to my portfolio! This is a full-stack developer portfolio created using React, Sass, and Sanity CMS. The purpose of this portfolio is to showcase all of my works and skills in one central location.
 
-## Portfolio
-
 Live demo at [exilium.cat](https://exilium.cat)
 
 ## Table of Contents

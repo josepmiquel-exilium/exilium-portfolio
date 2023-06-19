@@ -1,6 +1,3 @@
-// React utils
-import { useEffect, useState } from 'react';
-
 // Services
 import { fetchImage } from 'api/sanitycms/services/fetchs';
 
@@ -12,19 +9,15 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import './WorkExample.scss';
 
 const WorkExample = ({ work }) => {
-    const [image, setImage] = useState(null);
-
-    useEffect(() => {
-        setImage(fetchImage(work.image));
-    }, []);
+    const image = fetchImage(work.image) || null;
 
     return (
         <div className="workexample__container">
             <div className="workexample__col__left">
                 <div className="image">
-                    <a href={work.url} target="_blank">
+                    <a href={work.url} target="_blank" rel="noreferrer">
                         <div className="overlay">
-                            <img className="workexample__image" src={image} />
+                            <img className="workexample__image" src={image} alt="work image" />
                         </div>
                     </a>
                 </div>

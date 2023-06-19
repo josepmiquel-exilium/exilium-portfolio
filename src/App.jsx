@@ -6,6 +6,8 @@ import Home from './modules/portfolio/pages/home/Home';
 
 // Components
 import Layout from './modules/portfolio/layout/Layout';
+
+// Theme
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 // Scss

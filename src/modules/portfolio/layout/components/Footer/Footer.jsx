@@ -7,11 +7,9 @@ import StickyInfo from './components/StickyInfo';
 import './Footer.scss';
 
 const Footer = () => {
-    const isPhone = useIsPhone();
-
     return (
         <div className="footer__container">
-            {isPhone ? <SocialMedia /> : <StickyInfo />}
+            {useIsPhone() ? <SocialMedia /> : <StickyInfo />}
             <h2>Build by Josep Miquel</h2>
         </div>
     );

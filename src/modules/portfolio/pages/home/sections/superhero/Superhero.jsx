@@ -23,7 +23,7 @@ const Superhero = () => {
                 </p>
             </div>
 
-            <a href={resume} target={'_blank'}>
+            <a href={resume} target="_blank" rel="noreferrer">
                 <button className="first__button">Download my resume!</button>
             </a>
         </div>

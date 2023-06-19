@@ -1,17 +1,14 @@
 // Hooks
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useIsPhone from 'modules/portfolio/hooks/useIsPhone';
+import { Link } from 'react-router-dom';
 
 // Data
 import resume from 'assets/docs/resume.pdf';
 
 // Scss
 import './Menu.scss';
-import { Link, NavLink } from 'react-router-dom';
 
 const Menu = () => {
-    const isPhone = useIsPhone();
-
     return (
         <div className="menu__items__container">
             <ul>
@@ -37,7 +34,7 @@ const Menu = () => {
                 </Link>
             </ul>
 
-            {isPhone && (
+            {useIsPhone() && (
                 <div className="resume__container">
                     <a href={resume}>
                         <button className="first__button">Resume</button>

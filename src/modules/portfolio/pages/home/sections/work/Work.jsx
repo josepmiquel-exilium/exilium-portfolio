@@ -16,6 +16,7 @@ import './Work.scss';
 
 const Work = () => {
     const [works, setWorks] = useState(null);
+
     useEffect(() => {
         const getWorks = () => {
             fetchWork().then((response) => {

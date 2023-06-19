@@ -1,5 +1,4 @@
 // React utils
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -13,6 +12,7 @@ import useIsPhone from 'modules/portfolio/hooks/useIsPhone';
 
 // Scss
 import './VerticalTab.scss';
+import { useState } from 'react';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -43,10 +43,9 @@ function a11yProps(index) {
     };
 }
 const VerticalTabs = ({ jobs }) => {
-    const [value, setValue] = React.useState(0);
-    const isPhone = useIsPhone();
+    const [value, setValue] = useState(0);
 
-    const handleChange = (event, newValue) => {
+    const handleChange = (_, newValue) => {
         setValue(newValue);
     };
 
@@ -60,7 +59,11 @@ const VerticalTabs = ({ jobs }) => {
                     aria-label="verticaltabs"
                     centered={false}
                     // indicatorColor="#fa1e1e"
-                    sx={{ minWidth: isPhone ? '125px' : '150px', position: 'sticky', top: '0px' }}
+                    sx={{
+                        minWidth: useIsPhone() ? '125px' : '150px',
+                        position: 'sticky',
+                        top: '0px',
+                    }}
                 >
                     {jobs.map((e, index) => (
                         <Tab label={e.company} {...a11yProps(index)} key={index} />

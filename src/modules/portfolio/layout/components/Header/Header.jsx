@@ -19,8 +19,6 @@ import { menuModal } from 'utils/modal';
 import './Header.scss';
 
 const Header = () => {
-    const isPhone = useIsPhone();
-
     const openMenuMobile = () => {
         menuModal(<Menu />);
     };
@@ -33,7 +31,7 @@ const Header = () => {
 
             <div className="menu__resume__container">
                 <div className="menu__container">
-                    {isPhone ? (
+                    {useIsPhone() ? (
                         <div className="menu__mobile__container" onClick={() => openMenuMobile()}>
                             <MenuIcon className="menu__icon" />
                         </div>
@@ -41,7 +39,7 @@ const Header = () => {
                         <Fragment>
                             <Menu />
                             <div className="resume__container">
-                                <a href={resume} target={'_blank'}>
+                                <a href={resume} target="_blank" rel="noreferrer">
                                     <button className="first__button">Resume</button>
                                 </a>
                             </div>

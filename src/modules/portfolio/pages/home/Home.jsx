@@ -23,12 +23,9 @@ const Home = () => {
     useEffect(() => {
         switch (section) {
             case 'about':
-                console.log(aboutContainer.current);
                 aboutContainer.current.scrollIntoView({ behavior: 'smooth' });
                 break;
             case 'experience':
-                console.log(experienceContainer.current);
-
                 experienceContainer.current.scrollIntoView({ behavior: 'smooth' });
                 break;
             case 'work':
@@ -36,6 +33,8 @@ const Home = () => {
                 break;
             case 'contact':
                 contactContainer.current.scrollIntoView({ behavior: 'smooth' });
+                break;
+            default:
                 break;
         }
     }, [section, aboutContainer, experienceContainer, workContainer, contactContainer]);
